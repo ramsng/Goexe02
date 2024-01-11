@@ -47,7 +47,27 @@ func main() {
 	default:
 		fmt.Println("Eazy to play with both Gents and Ladies", a, b)
 	}
-	for i := 0; i > 5; i++ {
-		fmt.Printf("Value of i %d on iteration : %d", i, i*10)
+	// TRADITIONAL FOR LOOP
+	for i := 1; i < 5; i++ {
+		fmt.Printf("\nValue of i : %d on iteration:\t%d", i, i*10)
+		for j := i * 100; j <= 200; j++ {
+			fmt.Printf("\nValue of j %d on iteration : %d", j, j*10)
+			j = j * 10
+		}
+	}
+	// FOR LOOP WITH ZERO DECLARATION
+	i := 10
+	for i <= 100 {
+		fmt.Printf("\nvalue of k: %d computing to value : %d ", i, i*10)
+		i = i * 10
+		i++
+	}
+	for {
+		if i > 200 {
+			break
+		} else {
+			i = i + rand.Intn(1000)
+			fmt.Printf("\n Value of l: %d", i)
+		}
 	}
 }
