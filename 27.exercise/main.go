@@ -171,6 +171,7 @@ func main() {
 			}
 		}
 	*/
+	//Exercise 32
 	fmt.Println("Values true (or) False :\t", true && true)
 	fmt.Println("Values true (or) False :\t", true && false)
 	fmt.Println("Values true (or) False :\t", true || true)
